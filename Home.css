@@ -12,7 +12,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 15px;
- 
+
   /* box-shadow: 0px 3px 1px #828682; */
 }
 
@@ -24,32 +24,50 @@ body {
 .nav-bar .features {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
   font-weight: 600;
 }
-.nav-bar .features .paytm-for-consumer
-{ 
+.nav-bar .features .feature-name {
   position: relative;
-   border: 2px solid red;
-
+  padding: 5px;
+  cursor: pointer;
 }
-.nav-bar .features .paytm-for-consumer .dropdown
-{
+.nav-bar .features .feature-name .dropdown {
   display: none;
   position: absolute;
-  left: 100px;
-  right: 0;
+  top: 29px;
   background-color: white;
-  padding: 20px;
-  border: 1px solid;
-  
-
+  padding: 10px;
+  font-size: 13px;
+  cursor: pointer;
 }
-.nav-bar .features .paytm-for-consumer:hover .dropdown{
+.nav-bar .features .feature-name .dropdown div {
+  padding: 10px;
+  border-radius: 3px;
+}
+.nav-bar .features .feature-name:hover .dropdown {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  
+  gap: 5px;
+  width: 95%;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.nav-bar .features .feature-name:hover .dropdown:hover div:hover {
+  background-color: #f6f6f6;
+}
+.nav-bar .features .feature-name:hover {
+  background-color: #f6f6f6;
+}
+.nav-bar .features .company:hover .dropdown {
+  width: 140%;
+  padding-bottom: 10px;
+}
+.nav-bar .features .Investor-Relations:hover .dropdown {
+  width: 140%;
+  padding-bottom: 10px;
 }
 .nav-bar .signup-button {
   padding: 2px;
@@ -75,25 +93,92 @@ body {
   background-color: #00baf2;
 }
 
-.kyc{
+.dropdown div {
+  display: flex;
+  justify-content: space-between;
+}
+.kyc {
   display: flex;
   justify-content: center;
   align-items: center;
-    text-align: center;
-    padding: 5px;
-    background: #f6f6f6;
-    font-size: 15px;
-    box-shadow: 0px -2px 5px rgb(235, 225, 225);
-
+  text-align: center;
+  padding: 5px;
+  background: #f6f6f6;
+  font-size: 14px;
+  box-shadow: 0px -2px 5px rgb(235, 225, 225);
 }
-.kyc .no-wallet
-{
-    font-weight:500;
+.kyc .no-wallet {
+  font-weight: 500;
 }
-.kyc strong{
-    font-weight: 600;
+.kyc strong {
+  font-weight: 600;
 }
-.kyc .emoji{
+.kyc .emoji {
   height: 25px;
   padding: 5px;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0 80px 40px;
+}
+
+.container .paytm-mobile-photo {
+  flex: 1;
+  
+  padding-left: 50px;
+}
+
+.container .paytm-mobile-photo img {
+  width: 100%;
+  height: 503px;
+}
+.container .left img {
+  height: 80px;
+  width: 80px;
+}
+.container .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.container .left h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.container .left span {
+  width: 75%;
+  word-spacing: 2px;
+  line-height: 1.2;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.container .left .button {
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: .9rem;
+}
+.container .left .button a {
+  color: white;
+  text-decoration: none;
+}
+
+.container .left .button:hover{
+  color: black;
+  background-color: white;
+}
+
+.container .left .button:hover .fa-brands{
+  color: black;
 }
